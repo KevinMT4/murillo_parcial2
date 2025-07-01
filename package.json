@@ -2,7 +2,7 @@
   "name": "now-ui-kit-react",
   "version": "1.5.2",
   "private": true,
-  "homepage": "https://KevinMT4.github.io/examen_parcial2",
+  "homepage": "https://KevinMT4.github.io/murillo_parcial2",
   "dependencies": {
     "ajv": "^8.17.1",
     "ajv-keywords": "^5.1.0",
