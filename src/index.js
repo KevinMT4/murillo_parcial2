@@ -1,22 +1,5 @@
-/*
-
-=========================================================
-* Now UI Kit React - v1.5.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/now-ui-kit-react
-* Copyright 2023 Creative Tim (http://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/now-ui-kit-react/blob/main/LICENSE.md)
-
-* Designed by www.invisionapp.com Coded by www.creative-tim.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 // styles for this kit
@@ -31,9 +14,7 @@ import LoginPage from "views/examples/LoginPage.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(
+ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/index" element={<Index />} />
@@ -41,8 +22,8 @@ root.render(
       <Route path="/landing-page" element={<LandingPage />} />
       <Route path="/profile-page" element={<ProfilePage />} />
       <Route path="/login-page" element={<LoginPage />} />
-
       <Route path="*" element={<Navigate to="/index" replace />} />
     </Routes>
-  </BrowserRouter>
+  </BrowserRouter>,
+  document.getElementById("root")
 );
